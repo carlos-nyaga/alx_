@@ -1,0 +1,88 @@
+body, main{
+   display:flex; 
+}
+
+body {
+    flex-direction: column;
+}
+
+main {
+    flex-direction: row;
+    flex: auto;
+}
+
+
+article, aside {
+    overflow-y: auto;
+}
+
+article {
+    flex: 2;
+}
+
+aside {
+    flex: 1;
+}
+
+h1{
+    text-transform: uppercase;
+}
+
+img{
+    border-radius: 25px;
+}
+h1, h2{
+    display: inline-block;
+    clear: both;
+    padding: 5px;
+}
+
+a{
+    color: black;
+}
+
+p{
+    padding: 3px;
+}
+
+div.gallery {
+    border: 1px solid #ccc;
+    border-radius: 25px;
+  }
+  
+  div.gallery:hover {
+    border: 1px solid #777;
+  }
+  
+  div.gallery img {
+    width: 100%;
+    height: auto;
+  }
+  
+  div.desc {
+    padding: 15px;
+    text-align: center;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  .responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+  }
+  
+  @media only screen and (max-width: 700px) {
+    .responsive {
+      width: 49.99999%;
+      margin: 6px 0;
+    }
+  }
+  
+  @media only screen and (max-width: 500px) {
+    .responsive {
+      width: 100%;
+    }
+  }
